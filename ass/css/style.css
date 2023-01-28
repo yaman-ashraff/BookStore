@@ -1,38 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
 
-.parent{
-    background-color: #b48250;
+body {
     height: 100vh;
-    width: 30%;
-    position: absolute;
-    margin-left: auto;
-    
-}
-.child{
-    background-color: #f2e7c4;
-    height: 100vh;
-    width: 100px;
-    position: relative;
-    margin-right: auto;
+    background: linear-gradient(to right,
+            #f2e7c4 0%,
+            #f2e7c4 20%,
+            #b48250 80%,
+            #b48250 100%);
 }
 
 .navbar {
     width: 100%;
     position: fixed;
-    background-color: rgb(142, 42, 121);
     height: 100px;
 }
-
-/* .container {
-    width: 90%;
-} */
 
 .navbar-brand {
     padding-right: 100px;
     font-weight: bold;
-    font-family: 'Playfair Display', serif;
-        font-size: 30px;
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
     padding: 0px 50px 0px 0px;
 }
 
@@ -41,11 +29,6 @@
     background-color: rgb(71, 144, 189);
     height: 35px;
     padding: 2px 10px;
-}
-
-.nav-link.active {
-    color: rgb(88, 100, 100);
-    font-size: 15px;
 }
 
 .nav-link {
@@ -57,9 +40,10 @@
 }
 
 .nav-link::after {
-    content: '';
+    content: "";
     position: absolute;
-    bottom: 0;
+    top: 29px;
+    /* bottom: 0; */
     left: 0;
     height: 2px;
     width: 0;
@@ -75,16 +59,46 @@
     width: 100%;
 }
 
-.navbar span{
+.navbar span {
     font-size: 30px;
 }
 
-.navbar .iconn{
-    font-size: 16px;
-    padding-bottom: 20px;
-    padding-right: 5px;
-}
-.nav-item{
+.nav-item {
     font-size: 13px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
+}
+
+.fa-cart-shopping {
+    color: #f2e7c498;
+    font-size: 20px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.search-bar {
+    width: 30%;
+    max-width: 700px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 60px;
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+}
+
+.search-bar button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.search-bar button span {
+    width: 25px;
+    color: #f2e7c498;
+    font-size: 16px;
+    padding-right: 7px;
 }
