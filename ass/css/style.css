@@ -10,10 +10,13 @@ body {
             #b48250 100%);
 }
 
+/* start navbar */
+
 .navbar {
     width: 100%;
     position: fixed;
     height: 100px;
+    z-index: 9999;
 }
 
 .navbar-brand {
@@ -22,13 +25,6 @@ body {
     font-family: "Playfair Display", serif;
     font-size: 30px;
     padding: 0px 50px 0px 0px;
-}
-
-.navbar .buttn {
-    margin-top: 5px;
-    background-color: rgb(71, 144, 189);
-    height: 35px;
-    padding: 2px 10px;
 }
 
 .nav-link {
@@ -43,7 +39,6 @@ body {
     content: "";
     position: absolute;
     top: 29px;
-    /* bottom: 0; */
     left: 0;
     height: 2px;
     width: 0;
@@ -102,3 +97,35 @@ body {
     font-size: 16px;
     padding-right: 7px;
 }
+
+/* end navbar */
+
+/* start header */
+
+section.header {
+    height: 100vh;
+    background-image: url("../imgs/proj/Picsart_23-01-25_12-46-05-877.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.header .container {
+    height: 100vh;
+}
+
+section.header .header-content {
+    right: 0;
+    top: 50%;
+    flex-wrap: nowrap;
+}
+
+
+@media (width < 991px) {
+    section.about .numbers{
+        border: none !important;
+        height: 90px;
+    }
+}
+
+
+/* end header */
