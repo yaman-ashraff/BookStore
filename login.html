@@ -1,61 +1,177 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LogIn</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="ass/css/style.css">
     <link rel="stylesheet" href="ass/css/all.min.css">
-  </head>
-  <body>
-   <!--start navbar-->
-   <nav class="navbar navbar-expand-lg bg-transparent">
-    <div class="bookHeader"></div>
-    <div class="container">
-        <span><i class="fa-regular fa-chart-bar pe-5"></i></span>
-        <a class="navbar-brand">BookStore</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/index.html">STORE</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle bg-transparent" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        BOOKS</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Arabic</a></li>
-                        <li><a class="dropdown-item" href="#">English</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">NEW</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/login.html">LOGIN</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
-                </li>
-            </ul>
-            <i class="fa-solid fa-cart-shopping"></i>
-            <form class="d-flex search-bar" role="search">
-                <input class="rounded-pill form-control bg-transparent" type="search" aria-label="Search">
-                <button><span><i class="fa-solid fa-magnifying-glass"></i></span>
-                </button>
-            </form>
+</head>
+
+<body>
+    <!--start navbar-->
+    <nav class="navbar active navbar-expand-lg bg-transparent" id="navbar">
+        <div class="container">
+            <span><i class="fa-regular fa-chart-bar pe-5 text-black"></i></span>
+            <a class="navbar-brand">BookStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.html">STORE</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle bg-transparent" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            BOOKS</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Arabic</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#newBooks">NEW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">LOGIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">CONTACT</a>
+                    </li>
+                </ul>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <form class="d-flex search-bar" role="search">
+                    <input class="rounded-pill form-control bg-transparent" type="search" aria-label="Search">
+                    <button><span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </button>
+                </form>
+            </div>
         </div>
-    </div>
-</nav>
-<!--end navbar-->
+    </nav>
+    <!--end navbar-->
+    <header class="login" id="login">
+        <div class="row">
+            <div class="col-lg-4 m-auto">
+                <div class="card bg-dark">
+                    <div class="card-title text-center ">
+                        <img src="ass/imgs/proj/Picsart_23-01-25_12-45-50-042.png" width="200px" height="200px" />
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-user fa-2x"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control py-2" placeholder="User Name">
+                            </div>
+                            <div class="input-group mb-5">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-lock fa-2x"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control py-2" placeholder="User Password">
+                            </div>
+                            <button class="btn btn-success">Login Now</button>
+                            <p class="float-right text-white mt-2 mb-3"><input type="checkbox">Remember Me</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <!-- start footer section -->
+    <footer class="footer bg-dark text-white pt-3 mt-5" id="footer">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class=" text-uppercase mb-4 font-weight-bold text-warning">BookStore</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla possimus rerum atque velit
+                        reiciendis delectus ipsum, suscipit dicta?</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>
+                    <ul>
+                        <li><a href="">Your Account</a></li>
+                        <li><a href="">Become an Affiliates</a></li>
+                        <li><a href="">Hipping Rates</a></li>
+                        <li><a href="">Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful links</h5>
+                    <ul class="">
+                        <li><a href="">Your Account</a></li>
+                        <li><a href="">Become an Affiliates</a></li>
+                        <li><a href="">Hipping Rates</a></li>
+                        <li><a href="">Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3 mt-3 ">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+                    <ul>
+                        <li><a href=""><i class=" fas fa-print"></i> 000000000</a></li>
+                        <li><a href=""><i class=" fas fa-phone"></i> 0000000000</a></li>
+                        <li><a href=""><i class="fas fa-home"></i> Tulkarem, NY 2333, BL</a></li>
+                        <li><a href=""><i class="fas fa-envelope"></i> bookstore23@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row align-items-center text-center">
+                <div class="col-md-7">
+                    <p> Copyright @2023 All rights reserved by :
+                        <a href="#"><strong class="text-warning">The Providers</strong></a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="facebook list-inline-item">
+                                <a href="#" class="text-white" style="font-size: 23px;">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="twitter list-inline-item">
+                                <a href="#" class="text-white" style="font-size: 23px;">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="google list-inline-item">
+                                <a href="#" class="text-white" style="font-size: 23px;">
+                                    <i class="fab fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li class="linkedin list-inline-item">
+                                <a href="#" class="text-white" style="font-size: 23px;">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="youtube list-inline-item">
+                                <a href="#" class="text-white" style="font-size: 23px;">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--end footer section-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
 </html>

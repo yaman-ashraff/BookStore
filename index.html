@@ -9,17 +9,20 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- sweet alert2 css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.16/sweetalert2.min.css"
+        integrity="sha512-NvuRGlPf6cHpxQqBGnPe7fPoACpyrjhlSNeXVUY7BZAj1nNhuNpRBq3osC4yr2vswUEuHq2HtCsY2vfLNCndYA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Fontawesome-->
-    <link rel="stylesheet" href="ass/css/all.min.css">
-    <link rel="stylesheet" href="ass/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="vendor/all.min.css">
 </head>
 
 <body>
     <!--start navbar-->
-    <nav class="navbar navbar-expand-lg bg-transparent">
-        <div class="bookHeader"></div>
+    <nav class="navbar active navbar-expand-lg" id="navbar">
         <div class="container">
-            <span><i class="fa-regular fa-chart-bar pe-5"></i></span>
+            <span><i class="fa-regular fa-chart-bar pe-5 text-black"></i></span>
             <a class="navbar-brand">BookStore</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -41,13 +44,13 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">NEW</a>
+                        <a class="nav-link" href="#newBooks">NEW</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/login.html">LOGIN</a>
+                        <a class="nav-link" href="login.html">LOGIN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
+                        <a class="nav-link" href="#contact">CONTACT</a>
                     </li>
                 </ul>
                 <i class="fa-solid fa-cart-shopping"></i>
@@ -62,30 +65,1016 @@
     <!--end navbar-->
 
     <!--start header-->
-    <section class="header">
-        <div class="container position-relative">
-            <div class="header-content position-absolute ">
+    <header class="header" id="header">
+        <div class="container">
+            <div class="heading-content pb-5">
                 <div class="row">
-                    <div class="headerText col-6">
-                        <h1 class="text-capitalize">The Book Store</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aliquam voluptate tempore
-                            voluptates ipsum, a officiis animi at inventore assumenda?</p>
-                    </div>
-                    <div class="headerImg col-6">
-                        <div>
-                            <h2>There is more treasure in books than in all the pirate’s loot on Treasure Island.</h2>
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="header-text ps-5">
+                            <h1 class="text-capitalize pb-5">The Book Store</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae, accusamus iure
+                                et aliquam, iusto suscipit asperiores nihil temporibus nulla modi, eaque quam aliquid.
+                                Optio fugit ad inventore quos molestiae?</p>
                         </div>
-                        <p>Walt Disney ( American entrepreneur, animator, writer, voice actor and film producer.)</p>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="header-img p-3 ">
+                            <img src="assets/imgs/proj/Picsart_23-01-25_12-45-50-042.png" alt="">
+                            <h2><i class="fa-solid fa-quote-left text-dark text-decoration-none">
+                                    <pre></pre>
+                                </i>There is more treasure in books than in all the pirate’s loot on Treasure Island.
+                            </h2>
+                            <p>Walt Disney ( American entrepreneur, animator, writer, voice actor and film
+                                producer.)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start sections section -->
+    <section class="sections" id="sections">
+        <div class="container">
+            <h2 class="ps-5"> Parts </h2>
+            <div class="row d-flex">
+                <div class="px-0 col-md-2">
+                    <div class="sectionitem position-relative">
+                        <a href="#"><img src="assets/imgs/proj/parts/novel.jpg" alt="Novels">
+                            <h5 class="rounded-pill text-decoration-underline"> Novels </h5>
+                        </a>
+                        <div class="parts-overLay"></div>
+                    </div>
+                </div>
+                <div class="px-0 col-md-2">
+                    <div class="sectionitem position-relative">
+                        <a href="#"><img src="assets/imgs/proj/parts/games.png" alt="Games">
+                            <h5 class="rounded-pill text-decoration-underline"> Games </h5>
+                        </a>
+                        <div class=" parts-overLay">
+                        </div>
+                    </div>
+                </div>
+                <div class="px-0 col-md-2">
+                    <div class="sectionitem position-relative">
+                        <a href="#"><img src="assets/imgs/proj/parts/self-development.jpg" alt="Self development">
+                            <h5 class="rounded-pill text-decoration-underline"> self development </h5>
+                        </a>
+                        <div class=" parts-overLay">
+                        </div>
+                    </div>
+                </div>
+                <div class="px-0 col-md-2">
+                    <div class="sectionitem position-relative">
+                        <a href="#"><img src="assets/imgs/proj/parts/Literature-poetry.png" alt="Literature And Poetry">
+                            <h5 class="rounded-pill text-decoration-underline"> Literature And Poetry </h5>
+                        </a>
+                        <div class=" parts-overLay">
+                        </div>
+                    </div>
+                </div>
+                <div class="px-0 col-md-2">
+                    <div class="sectionitem position-relative">
+                        <a href="#"><img src="assets/imgs/proj/parts/school-books.png" alt="School Books">
+                            <h5 class="rounded-pill text-decoration-underline"> School Books </h5>
+                        </a>
+                        <div class=" parts-overLay">
+                        </div>
+                    </div>
+                </div>
+                <div class="px-0 col-md-2">
+                    <div class="sectionitem position-relative">
+                        <a href="#"><img src="assets/imgs/proj/parts/Learning-languages.png" alt="Learning languages">
+                            <h5 class="rounded-pill text-decoration-underline"> Learning languages </h5>
+                        </a>
+                        <div class=" parts-overLay">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- end header -->
+    <!-- end sections section -->
+
+
+    <!-- start Bestsellers section -->
+    <section class="comming soon pt-5" id="comming soon">
+        <div class="container text-center">
+            <h2 class="ps-5 pb-3"> Comming Soon </h2>
+            <div class="container">
+                <div class="row pb-5">
+                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+
+                        <div class="items position-relative">
+                            <img src="assets/imgs/proj/the-keeper-of-stories.webp" alt="the keeper of stories"
+                                class="first-img pb-2" />
+                            <div class="info align-items-center justify-content-center">
+                                <div class="desc ">
+                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                    <p>$20.00</p>
+                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                    <button type="button" class="btn btn-dark w-100">Add to cart</button>
+                                    <i class="fa-regular fa-heart text-dark"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                        <div class="items position-relative">
+                            <img src="assets/imgs/proj/the-keeper-of-stories.webp" alt="the keeper of stories"
+                                class="first-img pb-2" />
+                            <div class="info align-items-center justify-content-center">
+                                <div class="desc ">
+                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                    <p>$20.00</p>
+                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                    <button type="button" class="btn btn-dark w-100">Add to cart</button>
+                                    <i class="fa-regular fa-heart text-dark"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                        <div class="items position-relative">
+                            <img src="assets/imgs/proj/the-keeper-of-stories.webp" alt="the keeper of stories"
+                                class="first-img pb-2" />
+                            <div class="info align-items-center justify-content-center">
+                                <div class="desc ">
+                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                    <p>$20.00</p>
+                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                    <button type="button" class="btn btn-dark w-100">Add to cart</button>
+                                    <i class="fa-regular fa-heart text-dark"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                        <div class="items position-relative">
+                            <img src="assets/imgs/proj/the-keeper-of-stories.webp" alt="the keeper of stories"
+                                class="first-img pb-2" />
+                            <div class="info align-items-center justify-content-center">
+                                <div class="desc ">
+                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                    <p>$20.00</p>
+                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                    <button type="button" class="btn btn-dark w-100">Add to cart</button>
+                                    <i class="fa-regular fa-heart text-dark"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- slider -->
+        </div>
+    </section>
+    <!-- end Bestsellers section -->
+
+
+    <!-- start Recently Added section -->
+    <section class="newBooks pt-5" id="newBooks">
+        <div class="container text-center">
+            <h2 class="ps-5"> Recently Added </h2>
+            <div class="container">
+                <div class="row pb-5">
+                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                        <div class="items position-relative">
+                            <img src="assets/imgs/proj/the-keeper-of-stories.webp" alt="the keeper of stories"
+                                class="first-img pb-2" />
+                            <div class="info align-items-center justify-content-center">
+                                <div class="desc ">
+                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                    <p>$20.00</p>
+                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                    <button type="button" class="btn btn-dark w-100">Add to cart</button>
+                                    <i class="fa-regular fa-heart text-dark"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                        <div class="items position-relative">
+                            <img src="assets/imgs/proj/the-keeper-of-stories.webp" alt="the keeper of stories"
+                                class="first-img pb-2" />
+                            <div class="info align-items-center justify-content-center">
+                                <div class="desc ">
+                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                    <p>$20.00</p>
+                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                    <button type="button" class="btn btn-dark w-100">Add to cart</button>
+                                    <i class="fa-regular fa-heart text-dark"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                        <div class="items position-relative">
+                            <img src="assets/imgs/proj/the-keeper-of-stories.webp" alt="the keeper of stories"
+                                class="first-img pb-2" />
+                            <div class="info align-items-center justify-content-center">
+                                <div class="desc ">
+                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                    <p>$20.00</p>
+                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                    <button type="button" class="btn btn-dark w-100">Add to cart</button>
+                                    <i class="fa-regular fa-heart text-dark"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                        <div class="items position-relative">
+                            <img src="assets/imgs/proj/the-keeper-of-stories.webp" alt="the keeper of stories"
+                                class="first-img pb-2" />
+                            <div class="info align-items-center justify-content-center">
+                                <div class="desc ">
+                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                    <p>$20.00</p>
+                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                    <button type="button" class="btn btn-dark w-100">Add to cart</button>
+                                    <i class="fa-regular fa-heart text-dark"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- slider -->
+        </div>
+    </section>
+    <!-- end Recently Added section -->
+
+    <!-- start Bestsellers section -->
+    <section class="bestsellers pt-5" id="bestsellers">
+        <div class="container text-center">
+            <h2 class="ps-5 pb-3"> Bestsellers </h2>
+            <div class="container">
+                <div class="row pb-5">
+                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                        <div class="items position-relative">
+                            <img src="assets/imgs/proj/the-keeper-of-stories.webp" alt="the keeper of stories"
+                                class="first-img pb-2" />
+                            <div class="info align-items-center justify-content-center">
+                                <div class="desc ">
+                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                    <p>$20.00</p>
+                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                    <button type="button" class="btn btn-dark w-100">Add to cart</button>
+                                    <i class="fa-regular fa-heart text-dark"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                        <div class="items position-relative">
+                            <img src="assets/imgs/proj/the-keeper-of-stories.webp" alt="the keeper of stories"
+                                class="first-img pb-2" />
+                            <div class="info align-items-center justify-content-center">
+                                <div class="desc ">
+                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                    <p>$20.00</p>
+                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                    <button type="button" class="btn btn-dark w-100">Add to cart</button>
+                                    <i class="fa-regular fa-heart text-dark"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                        <div class="items position-relative">
+                            <img src="assets/imgs/proj/the-keeper-of-stories.webp" alt="the keeper of stories"
+                                class="first-img pb-2" />
+                            <div class="info align-items-center justify-content-center">
+                                <div class="desc ">
+                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                    <p>$20.00</p>
+                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                    <button type="button" class="btn btn-dark w-100">Add to cart</button>
+                                    <i class="fa-regular fa-heart text-dark"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                        <div class="items position-relative">
+                            <img src="assets/imgs/proj/the-keeper-of-stories.webp" alt="the keeper of stories"
+                                class="first-img pb-2" />
+                            <div class="info align-items-center justify-content-center">
+                                <div class="desc ">
+                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                    <p>$20.00</p>
+                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                    <button type="button" class="btn btn-dark w-100">Add to cart</button>
+                                    <i class="fa-regular fa-heart text-dark"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- slider -->
+        </div>
+    </section>
+    <!-- end Bestsellers section -->
+
+    <!-- <div class="wisdom3">
+        <div class="container text-center ">
+            <h3 class="mt-5 text-dark">When you read, receive the meanings with your heart</h3>
+        </div>
+    </div> -->
+
+    <!-- start sale section -->
+    <section class="sale pt-5" id="sale">
+        <div class="container text-center">
+            <h2 class="ps-5"> Sales </h2>
+            <div class="container">
+                <div class="row pb-5 ">
+                    <nav>
+                        <div class="nav nav-tabs justify-content-center border-0 mt-3" id="nav-tab" role="tablist">
+                            <button class="nav-link active me-3" id="nav-10-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-10" type="button" role="tab" aria-controls="nav-10"
+                                aria-selected="true">10%</button>
+                            <button class="nav-link me-3" id="nav-20-tab" data-bs-toggle="tab" data-bs-target="#nav-20"
+                                type="button" role="tab" aria-controls="nav-20" aria-selected="false">20%</button>
+                            <button class="nav-link me-3" id="nav-33-tab" data-bs-toggle="tab" data-bs-target="#nav-33"
+                                type="button" role="tab" aria-controls="nav-33" aria-selected="false">33%</button>
+                            <button class="nav-link me-3" id="nav-50-tab" data-bs-toggle="tab" data-bs-target="#nav-50"
+                                type="button" role="tab" aria-controls="nav-50" aria-selected="false">50%</button>
+                            <button class="nav-link me-3" id="nav-77-tab" data-bs-toggle="tab" data-bs-target="#nav-77"
+                                type="button" role="tab" aria-controls="nav-77" aria-selected="false">77%</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-10" role="tabpanel" aria-labelledby="nav-10-tab"
+                            tabindex="0">
+                            <div class="container">
+                                <div class="row pb-5">
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-20" role="tabpanel" aria-labelledby="nav-20-tab"
+                            tabindex="0">
+                            <div class="container">
+                                <div class="row pb-5">
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-33" role="tabpanel" aria-labelledby="nav-33-tab"
+                            tabindex="0">
+                            <div class="container">
+                                <div class="row pb-5">
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-50" role="tabpanel" aria-labelledby="nav-50-tab"
+                            tabindex="0">
+                            <div class="container">
+                                <div class="row pb-5">
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-77" role="tabpanel" aria-labelledby="nav-77-tab"
+                            tabindex="0">
+                            <div class="container">
+                                <div class="row pb-5">
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pt-3 align-items-center justify-content-center">
+                                        <div class="items position-relative">
+                                            <img src="assets/imgs/proj/the-keeper-of-stories.webp"
+                                                alt="the keeper of stories" class="first-img pb-2" />
+                                            <img class="second-img" src="assets/imgs/proj/sales/sale6.png" alt="">
+                                            <div class="info align-items-center justify-content-center">
+                                                <div class="desc ">
+                                                    <h5 class="pt-2">The Keeper Of Stories</h5>
+                                                    <span>
+                                                        <p class="text-decoration-line-through text-danger">$20.00
+                                                        <h6>$18.00</h6>
+                                                        </p>
+                                                    </span>
+                                                    <span class="mt-0"><i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star-half-stroke"></i></span>
+                                                    <button type="button" class="btn btn-dark w-100">Add to
+                                                        cart</button>
+                                                    <i class="fa-regular fa-heart text-dark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end sales -->
+
+    <!-- start footer section -->
+    <footer class="footer bg-dark text-white pt-5" id="footer">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 mx-auto">
+                    <h5 class=" text-uppercase mb-4 font-weight-bold text-warning">BookStore</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla possimus rerum atque velit
+                        reiciendis delectus ipsum, suscipit dicta?</p>
+                </div>
+                <div class="col-md-3 mx-auto">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>
+                    <ul>
+                        <li><a href="">Your Account</a></li>
+                        <li><a href="">Become an Affiliates</a></li>
+                        <li><a href="">Hipping Rates</a></li>
+                        <li><a href="">Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mx-auto">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">quick access</h5>
+                    <ul class="">
+                        <li><a href="">Sections</a></li>
+                        <li><a href="">Recently Add</a></li>
+                        <li><a href="">Best Seller</a></li>
+                        <li><a href="">Sales</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mx-auto">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning" id="contact">Contact</h5>
+                    <ul>
+                        <li><a href=""><i class=" fas fa-print"></i> 000000000</a></li>
+                        <li><a href="tel:0000000000"><i class=" fas fa-phone"></i> 0000000000</a></li>
+                        <li><a href=""><i class="fas fa-home"></i> Tulkarem, NY 2333, BL</a></li>
+                        <li><a href="mailto:bookstore23@gmail.com"><i class="fas fa-envelope"></i>
+                                bookstore23@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row align-items-center text-center">
+                <div class="col-md-6 text-start">
+                    <p> Copyright @2023 All rights reserved by :
+                        <a href="#"><strong class="text-warning">The Providers</strong></a>
+                    </p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <ul class="list-unstyled list-inline">
+                        <li class="facebook list-inline-item">
+                            <a href="#" class="text-white" style="font-size: 23px;">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="twitter list-inline-item">
+                            <a href="#" class="text-white" style="font-size: 23px;">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="google list-inline-item">
+                            <a href="#" class="text-white" style="font-size: 23px;">
+                                <i class="fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li class="linkedin list-inline-item">
+                            <a href="#" class="text-white" style="font-size: 23px;">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="youtube list-inline-item">
+                            <a href="#" class="text-white" style="font-size: 23px;">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--end footer section-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+    <!-- sweet alert2 CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.16/sweetalert2.min.js"
+        integrity="sha512-4aFcnPgoxsyUPgn8gNinplVIEoeBizjYPTpmOaUbC3VZQCsRnduAOch9v0Pn30yTeoWq1rIZByAE4/Gg79VPEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- js file -->
+    <script src="main.js"></script>
+
 </body>
 
 </html>
