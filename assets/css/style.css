@@ -30,7 +30,7 @@ body {
 
 ul {
     list-style-type: none;
-    color: #f2e7c4 !important;
+    color: #f2e7c4;
 }
 
 p {
@@ -64,10 +64,6 @@ i {
 
 .second-img {
     position: absolute;
-    width: 50px;
-    height: 50px !important;
-    top: 0px;
-    left: 59px;
     opacity: 0;
 }
 
@@ -77,6 +73,17 @@ i {
     width: 150px;
     height: 150px !important;
     opacity: .9;
+}
+
+@media screen and (max-xidth:1115px) and (min-width:787px) {
+    .second-img {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .items .second-img:hover {
+        opacity: 0 !important;
+    }
 }
 
 .items .fa-heart:hover {
@@ -92,40 +99,12 @@ h2 {
 
 h5 {
     font-family: 'Acme', sans-serif;
+    text-transform: capitalize;
 }
 
-/* 
-.wisdom {
-    height: 20vh;
-    background-image: url("../imgs/proj/scaled.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 10px 10px;
-    background-position: 0 - 10px;
-    margin-bottom: 50px;
+button .show-more {
+    width: 100px !important;
 }
-
-.wisdom2 {
-    height: 20vh;
-    background-image: url("../imgs/proj/back.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 10px 10px;
-    background-position: 0 - 10px;
-    margin-bottom: 50px;
-}
-
-
-.wisdom3 {
-    height: 20vh;
-    background-image: url("../imgs/proj/flower.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 10px 10px;
-    background-position: 0 - 10px;
-    margin-bottom: 50px;
-
-} */
 
 /* start navbar */
 
@@ -136,6 +115,9 @@ h5 {
     z-index: 9999;
 }
 
+.navbar .container span .fa-chart-bar {
+    cursor: auto;
+}
 
 .navbar-brand {
     padding-right: 100px;
@@ -143,6 +125,7 @@ h5 {
     font-family: "Playfair Display", serif !important;
     font-size: 30px;
     padding: 0px 50px 0px 0px;
+    cursor: auto;
 }
 
 .nav-link {
@@ -177,12 +160,16 @@ h5 {
     font-size: 30px;
 }
 
+/* js style */
+
 .bgColor {
     background-color: #b48250;
     color: #000;
     border-bottom: 1px solid #302f2f;
     transition: all .5s;
 }
+
+/* end js style */
 
 .nav-item {
     font-size: 13px;
@@ -320,6 +307,7 @@ header .header-text p {
         font-size: 58px;
     }
 }
+
 /* end header */
 
 /* sections sections */
@@ -429,7 +417,8 @@ header .header-text p {
 /* start popular */
 
 .items img {
-    height: 300px;
+    height: 1%;
+    width: 60%;
 }
 
 .items p,
@@ -537,3 +526,23 @@ footer .col-md-3 li:hover i {
 }
 
 /* end footer */
+#safe {
+    background-color: #b4825041;
+}
+
+#safe ul {
+    color: #302f2f !important;
+}
+
+#safe .safe-sale i {
+    cursor: auto;
+    font-size: 28px;
+}
+
+#safe h5 {
+    font-size: 18px !important;
+}
+
+#safe .border-end {
+    border-right: 1px solid #302f2f51 !important;
+}

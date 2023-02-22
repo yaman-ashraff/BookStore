@@ -7,13 +7,13 @@
     <title>LogIn</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="ass/css/style.css">
-    <link rel="stylesheet" href="ass/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="vendor/all.min.css">
 </head>
 
 <body>
     <!--start navbar-->
-    <nav class="navbar active navbar-expand-lg bg-transparent" id="navbar">
+    <nav class="navbar active navbar-expand-lg" id="navbar">
         <div class="container">
             <span><i class="fa-regular fa-chart-bar pe-5 text-black"></i></span>
             <a class="navbar-brand">BookStore</a>
@@ -32,18 +32,15 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             BOOKS</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Arabic</a></li>
-                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Arabic Books</a></li>
+                            <li><a class="dropdown-item" href="#">English Books</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#newBooks">NEW</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login.html">LOGIN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#footer">CONTACT</a>
+                        <a class="nav-link" href="#contact">CONTACT</a>
                     </li>
                 </ul>
                 <i class="fa-solid fa-cart-shopping"></i>
@@ -56,12 +53,12 @@
         </div>
     </nav>
     <!--end navbar-->
-    <header class="login" id="login">
+    <header class="login pb-5" id="login">
         <div class="row">
             <div class="col-lg-4 m-auto">
                 <div class="card bg-dark">
                     <div class="card-title text-center ">
-                        <img src="ass/imgs/proj/Picsart_23-01-25_12-45-50-042.png" width="200px" height="200px" />
+                        <img src="assets/imgs/login/Picsart_23-01-25_12-45-50-042.png" width="90%" />
                     </div>
                     <div class="card-body">
                         <form>
@@ -91,15 +88,15 @@
     </header>
 
     <!-- start footer section -->
-    <footer class="footer bg-dark text-white pt-3 mt-5" id="footer">
+    <footer class="footer bg-dark text-white pt-5" id="footer">
         <div class="container text-center text-md-left">
             <div class="row text-center text-md-left">
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <div class="col-md-3 mx-auto">
                     <h5 class=" text-uppercase mb-4 font-weight-bold text-warning">BookStore</h5>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla possimus rerum atque velit
                         reiciendis delectus ipsum, suscipit dicta?</p>
                 </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <div class="col-md-3 mx-auto">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>
                     <ul>
                         <li><a href="">Your Account</a></li>
@@ -108,62 +105,61 @@
                         <li><a href="">Help</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2 mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful links</h5>
+                <div class="col-md-3 mx-auto">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">quick access</h5>
                     <ul class="">
-                        <li><a href="">Your Account</a></li>
-                        <li><a href="">Become an Affiliates</a></li>
-                        <li><a href="">Hipping Rates</a></li>
-                        <li><a href="">Help</a></li>
+                        <li><a href="">Sections</a></li>
+                        <li><a href="">Recently Add</a></li>
+                        <li><a href="">Best Seller</a></li>
+                        <li><a href="">Sales</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-lg-3 mt-3 ">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+                <div class="col-md-3 mx-auto">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning" id="contact">Contact</h5>
                     <ul>
                         <li><a href=""><i class=" fas fa-print"></i> 000000000</a></li>
-                        <li><a href=""><i class=" fas fa-phone"></i> 0000000000</a></li>
+                        <li><a href="tel:0000000000"><i class=" fas fa-phone"></i> 0000000000</a></li>
                         <li><a href=""><i class="fas fa-home"></i> Tulkarem, NY 2333, BL</a></li>
-                        <li><a href=""><i class="fas fa-envelope"></i> bookstore23@gmail.com</a></li>
+                        <li><a href="mailto:bookstore23@gmail.com"><i class="fas fa-envelope"></i>
+                                bookstore23@gmail.com</a></li>
                     </ul>
                 </div>
             </div>
             <hr>
             <div class="row align-items-center text-center">
-                <div class="col-md-7">
+                <div class="col-md-6 text-start">
                     <p> Copyright @2023 All rights reserved by :
                         <a href="#"><strong class="text-warning">The Providers</strong></a>
                     </p>
                 </div>
-                <div class="col-md-5 col-lg-4">
-                    <div class="text-center text-md-right">
-                        <ul class="list-unstyled list-inline">
-                            <li class="facebook list-inline-item">
-                                <a href="#" class="text-white" style="font-size: 23px;">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li class="twitter list-inline-item">
-                                <a href="#" class="text-white" style="font-size: 23px;">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li class="google list-inline-item">
-                                <a href="#" class="text-white" style="font-size: 23px;">
-                                    <i class="fab fa-google-plus"></i>
-                                </a>
-                            </li>
-                            <li class="linkedin list-inline-item">
-                                <a href="#" class="text-white" style="font-size: 23px;">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </li>
-                            <li class="youtube list-inline-item">
-                                <a href="#" class="text-white" style="font-size: 23px;">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="col-md-6 text-end">
+                    <ul class="list-unstyled list-inline">
+                        <li class="facebook list-inline-item">
+                            <a href="#" class="text-white" style="font-size: 23px;">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="twitter list-inline-item">
+                            <a href="#" class="text-white" style="font-size: 23px;">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="google list-inline-item">
+                            <a href="#" class="text-white" style="font-size: 23px;">
+                                <i class="fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li class="linkedin list-inline-item">
+                            <a href="#" class="text-white" style="font-size: 23px;">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="youtube list-inline-item">
+                            <a href="#" class="text-white" style="font-size: 23px;">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -172,6 +168,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <!-- sweet alert2 CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.16/sweetalert2.min.js"
+        integrity="sha512-4aFcnPgoxsyUPgn8gNinplVIEoeBizjYPTpmOaUbC3VZQCsRnduAOch9v0Pn30yTeoWq1rIZByAE4/Gg79VPEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- js file -->
+    <script src="main.js"></script>
 </body>
 
 </html>
